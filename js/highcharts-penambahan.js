@@ -46,7 +46,7 @@ Highcharts.chart('container-penambahan', {
     }],
     yAxis: [{ // Primary yAxis
         labels: {
-            format: '{value}°C',
+            format: '{value}',
             style: {
                 color: Highcharts.getOptions().colors[1]
             }
@@ -65,7 +65,7 @@ Highcharts.chart('container-penambahan', {
             }
         },
         title: {
-            text: 'Temperature',
+            text: null,
             style: {
                 color: Highcharts.getOptions().colors[1]
             }
