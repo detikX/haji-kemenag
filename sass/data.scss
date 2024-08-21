@@ -5,6 +5,7 @@
 
     .frame {
         // border: 1px solid white;
+        position: relative;
         margin: 24px 0;
         padding: 16px;
         .bagan {
@@ -35,7 +36,8 @@
             // border-right: 2px dashed white;
             .bandara {
                 position: absolute;
-                background: $colorsecond;
+                // background: $colorsecond;
+                background: #aac4ce;
                 // border-radius: 8px;
                 padding: 8px;
                 text-align: center;
@@ -50,8 +52,13 @@
                 }
                 &__jamaah,
                 &__kloter {
-                    display: inline-block;
+                    // display: inline-block;
                     font-size: 0.9rem;
+                }
+                &__jamaah {
+                    &::after {
+                        content: " Jamaah";
+                    }
                 }
                 &-one {
                     left: 0%;
