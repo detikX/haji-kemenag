@@ -2,4 +2,154 @@
     h3 {
         color: white;
     }
+
+    .frame {
+        // border: 1px solid white;
+        margin: 24px 0;
+        padding: 16px;
+        .bagan {
+            width: 70%;
+            height: 100px;
+            position: absolute;
+            left: 50%;
+            bottom: 15%;
+            transform: translate(-50%, 0) rotate(-30deg);
+            &::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                bottom: 0%;
+                height: 100px;
+                width: 100px;
+                // border-left: 2px dashed white;
+                z-index: -1;
+            }
+            @media screen and (max-width: 768px) {
+                bottom: 0;
+            }
+
+            // border-top: 2px dashed white;
+            // border-left: 2px dashed white;
+            // border-right: 2px dashed white;
+            .bandara {
+                position: absolute;
+                background: $colorsecond;
+                border-radius: 8px;
+                padding: 8px;
+                text-align: center;
+                @media screen and (max-width: 768px) {
+                    padding: 4px;
+                }
+                &__name {
+                    font-weight: bold;
+                    @media screen and (max-) {
+                    }
+                }
+                &__jamaah,
+                &__kloter {
+                    display: inline-block;
+                    font-size: 0.9rem;
+                }
+                &-one {
+                    left: 0%;
+                    bottom: -24%;
+                    @media screen and (max-width: 768px) {
+                        bottom: 0%;
+                        left: -16%;
+                    }
+                }
+                &-three {
+                    right: 0%;
+                    bottom: -24%;
+                    @media screen and (max-width: 768px) {
+                        bottom: 0%;
+                        right: -16%;
+                    }
+                }
+                &-two {
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    bottom: -24%;
+                    @media screen and (max-width: 768px) {
+                        bottom: -70%;
+                        width: 65%;
+                    }
+                }
+            }
+        }
+    }
+
+    .all-image {
+        position: relative;
+        width: 100%;
+        height: 360px;
+        @media screen and (max-width: 768px) {
+            height: 280px;
+        }
+        .airport {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: auto;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        @keyframes pesawat {
+            0% {
+                top: 5%;
+                left: 25%;
+                opacity: 0;
+            }
+            20% {
+                top: 5%;
+                left: 25%;
+                opacity: 1;
+            }
+            50% {
+                top: 15%;
+                left: 15%;
+                opacity: 1;
+            }
+            80% {
+                top: 15%;
+                left: 15%;
+                opacity: 1;
+            }
+            90% {
+                top: 15%;
+                left: 15%;
+                opacity: 0;
+            }
+            100% {
+                top: 5%;
+                left: 25%;
+                opacity: 0;
+            }
+        }
+
+        .pesawat {
+            animation: pesawat 2.5s linear infinite;
+            opacity: 0;
+            position: absolute;
+            width: 120px;
+            height: auto;
+            top: 5%;
+            left: 25%;
+            z-index: 2;
+            @media screen and (max-width: 768px) {
+                width: 85px;
+                top: 25%;
+                left: 15%;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
 }

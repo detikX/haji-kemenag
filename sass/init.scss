@@ -6,6 +6,7 @@
 // $colorred: #7b2031; //jurno
 //$colorred: #42d4bf; //tosca kemenag
 $colorred: #28385f;
+$colorsecond: #42d4bf;
 
 @font-face {
     font-family: "itikaf";
@@ -482,5 +483,15 @@ section {
         height: 59px;
         background: #ccc;
         z-index: 21;
+    }
+}
+
+.color-white {
+    color: #fafafa;
+}
+
+.color {
+    &-second {
+        color: $colorsecond;
     }
 }
