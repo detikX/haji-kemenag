@@ -4,8 +4,8 @@
     }
 
     h4 {
-        font-family: "hidayatullah" !important;
-        font-size: 1.5rem;
+        // font-family: "hidayatullah" !important;
+        // font-size: 1.5rem;
     }
 
     .frame {
@@ -51,6 +51,9 @@
                 }
                 &__name {
                     font-weight: bold;
+                    &::before {
+                        content: "Bandara ";
+                    }
                     @media screen and (max-width: 768px) {
                         font-size: 0.9rem;
                     }
