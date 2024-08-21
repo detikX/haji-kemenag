@@ -1,0 +1,28 @@
+.pembukaan {
+    // background: linear-gradient(to bottom, #28385f, #42d4bf);
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        transform: translate(0, -50%);
+        width: 0;
+        height: 0;
+        left: 50%;
+        z-index: 5;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-top: 40px solid #dfcbbb !important;
+        @media screen and (max-width: 768px) {
+            left: 45%;
+        }
+    }
+}
+
+.layoutx {
+    background: rgba(white, 0.9);
+    padding: 8px 16px;
+    color: $colorred;
+    border-radius: 8px;
+    border-top: 4px solid #42d4bf;
+    box-shadow: 2px 3px 4px rgba(black, 0.6);
+}

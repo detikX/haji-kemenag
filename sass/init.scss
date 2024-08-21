@@ -7,6 +7,18 @@
 //$colorred: #42d4bf; //tosca kemenag
 $colorred: #28385f;
 
+@font-face {
+    font-family: "itikaf";
+    src: url("Itikaf.otf");
+    src: url("Itikaf.otf") format("otf");
+}
+
+@font-face {
+    font-family: "hidayatullah";
+    src: url("hidayatullah.woff2");
+    src: url("hidayatullah.woff2") format("woff2");
+}
+
 .labels {
     // background: $colorred;
     background: #840020;
@@ -112,7 +124,8 @@ section {
     //     background-size: cover;
     // }
     h3 {
-        color: $colorred;
+        // color: $colorred;
+        font-family: "itikaf", sans-serif;
     }
 
     .bg-block {
@@ -127,18 +140,18 @@ section {
     }
     p,
     li {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         color: #eaeaea;
-        font-weight: 300;
-        line-height: 1.9rem;
+        // font-weight: 300;
+        // line-height: 1.3rem;
         @media screen and (max-width: 768px) {
             // font-size: 1.5rem;
-            font-size: 2rem;
-            line-height: 2rem;
+            font-size: 1.2rem;
+            // line-height: 2rem;
         }
         @media screen and (max-width: 400px) {
-            font-size: 1.6rem;
-            line-height: 1.6rem;
+            font-size: 1.2rem;
+            // line-height: 1.2rem;
         }
     }
     // @media screen and (min-width:1600px) {
@@ -250,7 +263,7 @@ body {
     // p {
     //     color: #3a6a4d;
     // }
-    font-family: "Zain" !important;
+    font-family: "Rubik" !important;
     @media screen and (max-width: 768px) {
         // overflow-x: hidden;
     }
@@ -259,7 +272,7 @@ body {
     h3 {
         // font-family: 'Outfit';
         // font-weight: 700;
-        font-family: "Rubik", sans-serif !important;
+        font-family: "hidayatullah", sans-serif !important;
         // font-family: "Rubik" !important;
     }
 }
