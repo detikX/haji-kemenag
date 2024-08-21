@@ -149,6 +149,7 @@ Highcharts.chart('container-penambahan', {
     }, {
         name: 'Penambahan',
         type: 'spline',
+        color: '#65b87f',
         data: [
             10000, 0, 10000, 0, 8000, 20000
         ],
