@@ -12,8 +12,9 @@
             height: 100px;
             position: absolute;
             left: 50%;
-            bottom: 15%;
-            transform: translate(-50%, 0) rotate(-30deg);
+            filter: drop-shadow(2px 4px 6px #222);
+            bottom: 10%;
+            transform: translate(-50%, 0); //rotate(-31deg);
             &::after {
                 content: "";
                 position: absolute;
@@ -26,6 +27,7 @@
             }
             @media screen and (max-width: 768px) {
                 bottom: 0;
+                width: 100%;
             }
 
             // border-top: 2px dashed white;
@@ -34,7 +36,7 @@
             .bandara {
                 position: absolute;
                 background: $colorsecond;
-                border-radius: 8px;
+                // border-radius: 8px;
                 padding: 8px;
                 text-align: center;
                 @media screen and (max-width: 768px) {
@@ -42,7 +44,8 @@
                 }
                 &__name {
                     font-weight: bold;
-                    @media screen and (max-) {
+                    @media screen and (max-width: 768px) {
+                        font-size: 0.9rem;
                     }
                 }
                 &__jamaah,
@@ -55,7 +58,7 @@
                     bottom: -24%;
                     @media screen and (max-width: 768px) {
                         bottom: 0%;
-                        left: -16%;
+                        left: 0%;
                     }
                 }
                 &-three {
@@ -63,7 +66,7 @@
                     bottom: -24%;
                     @media screen and (max-width: 768px) {
                         bottom: 0%;
-                        right: -16%;
+                        right: 0%;
                     }
                 }
                 &-two {
@@ -71,8 +74,8 @@
                     transform: translate(-50%, 0);
                     bottom: -24%;
                     @media screen and (max-width: 768px) {
-                        bottom: -70%;
-                        width: 65%;
+                        bottom: 60%;
+                        width: 50%;
                     }
                 }
             }
