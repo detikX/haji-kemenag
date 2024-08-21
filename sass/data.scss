@@ -3,6 +3,11 @@
         color: white;
     }
 
+    h4 {
+        font-family: "hidayatullah" !important;
+        font-size: 1.5rem;
+    }
+
     .frame {
         // border: 1px solid white;
         position: relative;
@@ -81,7 +86,7 @@
                     transform: translate(-50%, 0);
                     bottom: -24%;
                     @media screen and (max-width: 768px) {
-                        bottom: 60%;
+                        bottom: 85%;
                         width: 50%;
                     }
                 }
