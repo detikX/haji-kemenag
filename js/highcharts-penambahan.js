@@ -45,6 +45,7 @@ Highcharts.chart('container-penambahan', {
         },
     }],
     yAxis: [{ // Primary yAxis
+
         labels: {
             format: '{value}',
             style: {
@@ -71,6 +72,8 @@ Highcharts.chart('container-penambahan', {
             }
         }
     }, { // Secondary yAxis
+        gridLineColor: '#121b33',
+        lineColor: '#121b33',
         title: {
             text: null,
             style: {
