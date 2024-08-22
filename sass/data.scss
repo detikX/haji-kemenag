@@ -159,7 +159,7 @@
             opacity: 1;
         }
         90% {
-            opacity: 0;
+            opacity: 1;
         }
 
         100% {
@@ -169,19 +169,22 @@
 
     .animasi-bus {
         width: 100%;
+        margin: 16px 0;
         // height: 200px;
         position: relative;
         .angka-jam {
             position: absolute;
             animation: jam 7s linear infinite;
             left: 50%;
-            top: 50%;
+            top: 90%;
             opacity: 0;
+            z-index: 3;
             font-weight: bold;
             transform: translate(-50%, -50%);
             width: fit-content;
             padding: 4px 8px;
-            background: $colorsecond;
+            // background: $colorsecond;
+            background: white;
             @media screen and (max-width: 768px) {
                 padding: 2px 4px;
             }
