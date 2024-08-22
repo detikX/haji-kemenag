@@ -142,14 +142,41 @@
         }
     }
 
+    @keyframes jam {
+        0% {
+            opacity: 0;
+        }
+        20% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 1;
+        }
+        60% {
+            opacity: 1;
+        }
+        75% {
+            opacity: 1;
+        }
+        90% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
     .animasi-bus {
         width: 100%;
         // height: 200px;
         position: relative;
         .angka-jam {
             position: absolute;
+            animation: jam 7s linear infinite;
             left: 50%;
             top: 50%;
+            opacity: 0;
             font-weight: bold;
             transform: translate(-50%, -50%);
             width: fit-content;
