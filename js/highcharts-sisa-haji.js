@@ -5,7 +5,7 @@ Highcharts.setOptions({
 
 })
 
-Highcharts.chart('container-penambahan', {
+Highcharts.chart('container-sisa-haji', {
     chart: {
         backgroundColor: 'transparent',
         zooming: {
@@ -26,12 +26,13 @@ Highcharts.chart('container-penambahan', {
 
     xAxis: [{
         categories: [
-            '2017', '2018', '2019', '2022',
+            '2015', '2016', '2017', '2018', '2019', '2022',
             '2023', '2024'
         ],
         crosshair: true,
         labels: {
             // text: null,
+            // format: '{value:,.0f}',
             // formatter: function () {
             //     // var a = this.y.toString().replace('.', ',');
             //     // return a + '%';
@@ -46,13 +47,13 @@ Highcharts.chart('container-penambahan', {
     }],
     yAxis: [{ // Primary yAxis
 
+        // labels: {
+        //     style: {
+        //         color: Highcharts.getOptions().colors[1]
+        //     }
+        // },
         labels: {
             format: '{value}',
-            style: {
-                color: Highcharts.getOptions().colors[1]
-            }
-        },
-        labels: {
             // text: null,
             // formatter: function () {
             //     // var a = this.y.toString().replace('.', ',');
@@ -82,7 +83,7 @@ Highcharts.chart('container-penambahan', {
             }
         },
         labels: {
-            format: '{value:,.0f}',
+            format: '{value}',
             style: {
                 // color: Highcharts.getOptions().colors[4]
                 color: "#fafafa",
@@ -142,20 +143,16 @@ Highcharts.chart('container-penambahan', {
         name: 'Kuota',
         type: 'column',
         yAxis: 1,
-        data: [
-            211000, 221000, 221000, 100050, 221000, 221000
-        ],
+        data: [155200, 155200, 204000, 204000, 214000, 92825, 210680, 213320],
         tooltip: {
             valueSuffix: ' Jamaah'
         }
 
     }, {
-        name: 'Penambahan',
+        name: 'Sisa Kuota',
         type: 'spline',
         color: '#eaeaea',
-        data: [
-            10000, 0, 10000, 0, 8000, 20000
-        ],
+        data: [744, 759, 935, 649, 1268, 157, 898, 45],
         tooltip: {
             valueSuffix: ' Jamaah'
         }

@@ -47,7 +47,7 @@ Highcharts.chart('container-makan-pokok', {
             // },
             style: {
                 color: "#fafafa",
-                font: '18px "Zain", sans-serif',
+                font: '13px "Source Code Pro", sans-serif',
                 // lineHeight: '2rem'
                 textOutline: false
             }
@@ -63,7 +63,7 @@ Highcharts.chart('container-makan-pokok', {
             format: null,
             style: {
                 color: "#fafafa",
-                font: '18px "Zain", sans-serif',
+                font: '13px "Source Code Pro", sans-serif',
                 // lineHeight: '2rem'
                 textOutline: false
             }
