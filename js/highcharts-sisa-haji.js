@@ -7,14 +7,15 @@ Highcharts.setOptions({
 
 Highcharts.chart('container-sisa-haji', {
     chart: {
-        backgroundColor: 'transparent',
+        backgroundColor: 'rgba(32,46,80,.9)',
+        borderRadius: 16,
         zooming: {
             type: 'xy'
         }
     },
     title: {
-        text: 'Kuota Haji Indonesia',
-        align: 'left',
+        text: 'Sisa Kuota Haji Indonesia',
+        align: 'center',
         style: {
             color: "#ccc",
             font: 'bold 20px "Source Code Pro", sans-serif',
@@ -32,7 +33,7 @@ Highcharts.chart('container-sisa-haji', {
         crosshair: true,
         labels: {
             // text: null,
-            // format: '{value:,.0f}',
+            // format: '{value}',
             // formatter: function () {
             //     // var a = this.y.toString().replace('.', ',');
             //     // return a + '%';
@@ -54,6 +55,7 @@ Highcharts.chart('container-sisa-haji', {
         // },
         labels: {
             format: '{value}',
+            // format: '{value:,.0f}',
             // text: null,
             // formatter: function () {
             //     // var a = this.y.toString().replace('.', ',');
@@ -73,8 +75,8 @@ Highcharts.chart('container-sisa-haji', {
             }
         }
     }, { // Secondary yAxis
-        gridLineColor: '#121b33',
-        lineColor: '#121b33',
+        // gridLineColor: '#121b33',
+        // lineColor: '#121b33',
         title: {
             text: null,
             style: {
@@ -83,7 +85,7 @@ Highcharts.chart('container-sisa-haji', {
             }
         },
         labels: {
-            format: '{value}',
+            // format: '{value:,.0f}',
             style: {
                 // color: Highcharts.getOptions().colors[4]
                 color: "#fafafa",
@@ -101,7 +103,7 @@ Highcharts.chart('container-sisa-haji', {
         verticalAlign: 'top',
         itemStyle: {
             // fontSize: '35px',
-            font: '13px Rubik',
+            font: '13px Source Code Pro',
             color: '#fafafa'
         },
         itemHoverStyle: {

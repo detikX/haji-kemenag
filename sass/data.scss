@@ -1,6 +1,20 @@
 .bg-update {
     background: #202e50 !important;
 }
+.position-relative-100 {
+    position: relative;
+    height: 100vh;
+}
+.image-centerx {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
 
 .data {
     // background: linear-gradient(to top, $colorred, $colorsecond);
@@ -20,7 +34,16 @@
     h3 {
         color: white;
     }
-
+    .image-sisa {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
     h4 {
         // font-family: "hidayatullah" !important;
         // font-size: 1.5rem;

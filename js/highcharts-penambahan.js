@@ -47,18 +47,18 @@ Highcharts.chart('container-penambahan', {
     yAxis: [{ // Primary yAxis
 
         labels: {
-            format: '{value}',
-            style: {
-                color: Highcharts.getOptions().colors[1]
-            }
         },
         labels: {
+            // format: '{value}',
+            // style: {
+            // },
             // text: null,
             // formatter: function () {
             //     // var a = this.y.toString().replace('.', ',');
             //     // return a + '%';
             // },
             style: {
+                // color: Highcharts.getOptions().colors[1],
                 color: "#ccc",
                 font: '13px "Source Code Pro", sans-serif',
                 // lineHeight: '2rem'
