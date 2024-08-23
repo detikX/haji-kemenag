@@ -13,6 +13,14 @@ Highcharts.chart('container-sisa-haji', {
             type: 'xy'
         }
     },
+    subtitle: {
+        text: 'Sumber: Kementerian Agama',
+        align: 'left',
+        style: {
+            color: "#ccc",
+            font: '10px "Source Code Pro", sans-serif',
+        }
+    },
     title: {
         text: 'Sisa Kuota Haji Indonesia',
         align: 'center',

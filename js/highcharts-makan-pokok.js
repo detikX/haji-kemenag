@@ -23,11 +23,11 @@ Highcharts.chart('container-makan-pokok', {
         }
     },
     subtitle: {
-        text: null,
+        text: 'Sumber: Kementerian Agama',
+        align: 'left',
         style: {
-            color: "#fafafa",
-            font: 'normal 13px "Source Code Pro", sans-serif',
-            // lineHeight: '2rem'
+            color: "#ccc",
+            font: '10px "Source Code Pro", sans-serif',
         }
     },
     xAxis: {

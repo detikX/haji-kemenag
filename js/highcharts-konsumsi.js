@@ -18,8 +18,12 @@ Highcharts.chart('container-konsumsi', {
     },
 
     subtitle: {
-        text: null,
-        align: 'left'
+        text: 'Sumber: Kementerian Agama',
+        align: 'left',
+        style: {
+            color: "#ccc",
+            font: '10px "Source Code Pro", sans-serif',
+        }
     },
 
     yAxis: {

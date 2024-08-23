@@ -12,12 +12,21 @@ Highcharts.chart('container-penambahan', {
             type: 'xy'
         }
     },
+
     title: {
         text: 'Kuota Haji Indonesia',
         align: 'left',
         style: {
             color: "#ccc",
             font: 'bold 20px "Source Code Pro", sans-serif',
+        }
+    },
+    subtitle: {
+        text: 'Sumber: Kementerian Agama',
+        align: 'left',
+        style: {
+            color: "#ccc",
+            font: '10px "Source Code Pro", sans-serif',
         }
     },
     credits: {
