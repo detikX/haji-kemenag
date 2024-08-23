@@ -112,6 +112,16 @@
         }
     }
 
+    .image-mas-min {
+        width: 100%;
+        height: auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
     @keyframes MoveUpDownBus {
         0% {
             left: 0;
