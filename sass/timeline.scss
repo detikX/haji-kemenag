@@ -63,7 +63,7 @@
             width: 254px;
             height: 80px;
             margin-left: auto;
-            overflow: hidden;
+            // overflow: hidden;
             transform: translateX(8px);
         }
 
@@ -90,15 +90,45 @@
             }
             .date {
                 display: flex;
+                position: relative;
                 span {
                     transform: translateY(100%);
                     transition: 0.2s;
+                }
+                &.year2024 {
+                    &::after {
+                        content: "2024";
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        bottom: -50%;
+                        font-size: 36px;
+                        @media screen and (max-width: 768px) {
+                            font-size: 20px;
+                            bottom: -65%;
+                        }
+                    }
+                }
+                &.year2025 {
+                    &::after {
+                        content: "2025";
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        bottom: -50%;
+                        font-size: 36px;
+                        @media screen and (max-width: 768px) {
+                            font-size: 20px;
+                            bottom: -65%;
+                        }
+                    }
                 }
             }
             &.animate {
                 opacity: 1;
                 .date {
-                    span {
+                    span,
+                    div {
                         transform: translateY(0);
                     }
                 }
