@@ -93,7 +93,7 @@
             font-family: "Rubik";
             display: block;
             color: white;
-            font-size: 80px;
+            font-size: 45px;
             font-weight: 300;
             line-height: 1;
             padding-right: 55px;
@@ -119,11 +119,11 @@
                         position: absolute;
                         left: 0;
                         bottom: 0;
-                        bottom: -50%;
-                        font-size: 36px;
+                        bottom: -70%;
+                        font-size: 26px;
                         @media screen and (max-width: 768px) {
                             font-size: 20px;
-                            bottom: -65%;
+                            bottom: -80%;
                         }
                     }
                 }
@@ -133,11 +133,11 @@
                         position: absolute;
                         left: 0;
                         bottom: 0;
-                        bottom: -50%;
-                        font-size: 36px;
+                        bottom: -70%;
+                        font-size: 26px;
                         @media screen and (max-width: 768px) {
                             font-size: 20px;
-                            bottom: -65%;
+                            bottom: -80%;
                         }
                     }
                 }
@@ -162,7 +162,7 @@
             height: 16px;
             border: 1px solid #fff;
             border-radius: 16px;
-            // background-color: #f80964;
+            // background-color: green;
             background: $colorred;
 
             &:before {
@@ -173,7 +173,7 @@
                 border-radius: 6px;
                 width: 6px;
                 height: 6px;
-                // background-color: #f80964;
+                // background-color: green;
                 background-color: $colorred;
                 content: "";
             }
@@ -238,7 +238,7 @@
             top: 32px;
             width: 16px;
             height: 16px;
-            border: 1px solid #f80964;
+            border: 1px solid green;
             border-radius: 16px;
             background-color: #fff;
 
@@ -250,7 +250,7 @@
                 border-radius: 6px;
                 width: 6px;
                 height: 6px;
-                background-color: #f80964;
+                background-color: green;
                 content: "";
             }
         }

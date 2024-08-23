@@ -1,3 +1,7 @@
+.bg-update {
+    background: #318a7d !important;
+}
+
 .data {
     // background: linear-gradient(to top, $colorred, $colorsecond);
     // background-image: url("../img/bgbg.png");
@@ -207,10 +211,10 @@
             left: 0;
             opacity: 0;
             bottom: 0;
-            width: 100px;
+            width: 150px;
             height: auto;
             @media screen and (max-width: 768px) {
-                width: 50px;
+                width: 80px;
             }
             img {
                 width: 100%;
