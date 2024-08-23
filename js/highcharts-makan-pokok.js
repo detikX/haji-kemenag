@@ -8,12 +8,13 @@ Highcharts.setOptions({
 // Data retrieved https://en.wikipedia.org/wiki/List_of_cities_by_average_temperature
 Highcharts.chart('container-makan-pokok', {
     chart: {
-        type: 'line',
+        type: 'bar',
         backgroundColor: 'rgba(255,255,255,0)',
         borderRadius: 16
     },
     title: {
-        text: 'Estimasi Kebutuhan Bahan Baku Makanan Jemaah Haji Indonesia',
+        // text: 'Estimasi Kebutuhan Bahan Baku Makanan Jemaah Haji Indonesia',
+        text: null,
         align: 'left',
         style: {
             color: "#fafafa",
@@ -22,7 +23,7 @@ Highcharts.chart('container-makan-pokok', {
         }
     },
     subtitle: {
-        text: 'Sumber: BPS',
+        text: null,
         style: {
             color: "#fafafa",
             font: 'normal 13px "Source Code Pro", sans-serif',
@@ -106,12 +107,16 @@ Highcharts.chart('container-makan-pokok', {
         },
     },
     plotOptions: {
-        spline: {
+        column: {
+            borderWidth: 0,
+        },
+        bar: {
             marker: {
                 radius: 4,
                 lineColor: '#666666',
-                lineWidth: 1
+                lineWidth: 0
             },
+            borderWidth: 0,
             dataLabels: {
                 style: {
                     color: "#fafafa",
@@ -125,27 +130,7 @@ Highcharts.chart('container-makan-pokok', {
         }
     },
     series: [{
-        //         2014: 70,68
 
-        // 2015: 70,02
-
-        // 2016: 70,32
-
-        // 2017: 72,67
-
-        // 2018: 75,61
-
-        // 2019: 75,65
-
-        // 2020: 75,50
-
-        // 2021: 78,15
-
-        // 2022: 81,33
-
-        // 2023: 83,34
-
-        // 2024: 84,13 juta orang orang
         name: 'Makkah',
         data: [2207, 1053, 991, 19]
     }, {

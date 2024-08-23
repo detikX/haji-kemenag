@@ -1,8 +1,26 @@
 .company-timeline {
     //   margin: 120px 0;
 
-    ul li {
-        margin: 0 0 10px 24px;
+    // ul li {
+    //     margin: 0 0 10px 24px;
+    // }
+    .block-inner {
+        background: linear-gradient(to left, #213e80, #1b2846);
+        padding: 8px;
+        border-radius: 16px;
+        border-top: 4px solid #54ab9f;
+    }
+    ul {
+        padding-left: 20px;
+        list-style: none;
+        li {
+            margin-bottom: 10px;
+            &::before {
+                font-family: "FontAwesome";
+                content: "\f058";
+                margin: 0 5px 0 -15px;
+            }
+        }
     }
     .sticky-mode {
         min-height: 0vh;
@@ -61,7 +79,7 @@
         .company-timeline-year {
             position: relative;
             width: 254px;
-            height: 80px;
+            height: 60px;
             margin-left: auto;
             // overflow: hidden;
             transform: translateX(8px);

@@ -1,6 +1,6 @@
 Highcharts.chart('container-bumbu', {
     chart: {
-        type: 'column',
+        type: 'bar',
         backgroundColor: 'transparent'
     },
     title: {
@@ -86,7 +86,7 @@ Highcharts.chart('container-bumbu', {
         },
     },
     plotOptions: {
-        column: {
+        bar: {
             pointPadding: 0.2,
             borderWidth: 0
         }
