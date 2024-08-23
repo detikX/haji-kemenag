@@ -1,6 +1,19 @@
 .teaser {
     background: #dfcbbb;
     min-height: auto;
+    .tagx {
+        position: absolute;
+        left: 0;
+        top: 0;
+        @media screen and (max-width: 768px) {
+            top: -16px;
+        }
+        font-size: 12px;
+        padding: 4px 8px;
+        font-weight: bold;
+        border-radius: 8px;
+        background: rgba($colorsecond, 0.7);
+    }
     .image {
         width: 100%;
         height: auto;
