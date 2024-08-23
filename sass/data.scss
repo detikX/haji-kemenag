@@ -1,5 +1,31 @@
 .bg-update {
     background: #202e50 !important;
+    &::before {
+        content: "";
+        position: absolute;
+        top: -32px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100px;
+        border-radius: 50px;
+        // transform: rotate(-2deg);
+        // background: #202e50;
+        background: $colorred;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -32px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100px;
+        border-radius: 50px;
+        // transform: rotate(-2deg);
+        // background: #202e50;
+        background: $colorred;
+    }
 }
 .position-relative-100 {
     position: relative;
@@ -18,8 +44,9 @@
 
 .data {
     // background: linear-gradient(to top, $colorred, $colorsecond);
-    // background-image: url("../img/bgbg.png");
-    // background-repeat: repeat-x;
+    // background-image: url("../img/bg-lingkaran.png");
+    // background-repeat: repeat;
+    // background-size: 80px 80px;
     // // background: $colorred;
     // &::before {
     //     content: "";
@@ -29,7 +56,7 @@
     //     left: 0;
     //     right: 0;
     //     width: 100%;
-    //     height: 100px;
+    //     // height: 100px;
     // }
     h3 {
         color: white;
@@ -339,10 +366,10 @@
 .inovasi {
     border-radius: 16px;
     .frame {
-        background: linear-gradient(to right, #2b4490 50%, #1f9f8c);
+        background: linear-gradient(to right, #2b4490 50%, #227a6d);
         border-radius: 16px;
         @media screen and (max-width: 768px) {
-            background: linear-gradient(to right, #2b4490 38%, #1f9f8c);
+            background: linear-gradient(to right, #2b4490 38%, #227a6d);
         }
     }
 }

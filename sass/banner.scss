@@ -21,6 +21,31 @@
             object-fit: cover;
         }
     }
+    .title {
+        position: absolute;
+        left: 75%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(to right, rgb(6 46 67 / 80%), rgb(6 46 67 / 50%));
+        width: 50%;
+        padding: 8px;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            left: 50%;
+            background: rgb(6 46 67 / 50%);
+            top: 24%;
+            text-align: center;
+            border-radius: 0;
+        }
+        h2 {
+            color: white;
+            text-shadow: 3px 3px black;
+            font-size: 4rem;
+            @media screen and (max-width: 768px) {
+                font-size: 3rem;
+            }
+        }
+    }
     @media screen and (max-width: 768px) {
         min-height: 90vh;
     }
