@@ -82,7 +82,7 @@ Highcharts.chart('container-penambahan', {
             }
         },
         labels: {
-            format: '{value:,.0f}',
+            // format: '{value:,.0f}',
             style: {
                 // color: Highcharts.getOptions().colors[4]
                 color: "#fafafa",
