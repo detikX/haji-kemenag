@@ -9,7 +9,7 @@ Highcharts.setOptions({
 Highcharts.chart('container-makan-pokok', {
     chart: {
         type: 'bar',
-        backgroundColor: 'rgba(255,255,255,0)',
+        backgroundColor: 'rgba(40,56,95,1)',
         borderRadius: 16
     },
     title: {
