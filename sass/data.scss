@@ -335,3 +335,14 @@
 .bg-second {
     // background: linear-gradient(to bottom, $colorred 35%, white) !important;
 }
+
+.inovasi {
+    border-radius: 16px;
+    .frame {
+        background: linear-gradient(to right, #2b4490 50%, #1f9f8c);
+        border-radius: 16px;
+        @media screen and (max-width: 768px) {
+            background: linear-gradient(to right, #2b4490 38%, #1f9f8c);
+        }
+    }
+}
