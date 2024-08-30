@@ -81,6 +81,7 @@
         position: relative;
         margin: 24px 0;
         padding: 16px;
+
         .bagan {
             width: 100%;
             height: 100px;
@@ -372,6 +373,25 @@
     .frame {
         background: linear-gradient(to right, #2b4490 50%, #227a6d);
         border-radius: 16px;
+        margin-bottom: 32px;
+        position: relative;
+        // p {
+        //     // margin-left: 24px;
+        //     font-size: 1.1rem;
+        // }
+        .image-addon {
+            width: 80px;
+            height: 170px;
+            margin-right: 24px;
+            border: 2px solid #51b8b7;
+            border-radius: 16px;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 16px;
+                object-fit: cover;
+            }
+        }
         @media screen and (max-width: 768px) {
             background: linear-gradient(to right, #2b4490 38%, #227a6d);
         }
