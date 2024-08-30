@@ -4,6 +4,24 @@
     // ul li {
     //     margin: 0 0 10px 24px;
     // }
+    padding: 62px 0 32px;
+    background-image: url("../img/bg-lingkaran.png");
+    background-repeat: repeat;
+    background-size: 80px 80px;
+
+    // background: $colorred;
+    &::after {
+        content: "";
+        position: absolute;
+        background: linear-gradient(to top, $colorred, rgba($colorred, 0.7), $colorred);
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        // height: 100px;
+    }
     .block-inner {
         background: linear-gradient(to left, #213e80, #1b2846);
         padding: 8px;
